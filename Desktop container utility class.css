@@ -14,7 +14,6 @@
 }
 
 .portrait {
-    border: solid red;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -53,6 +52,7 @@
 
   p {
     font-size: 0.8rem;
+    text-align: center;
    }
   
    h1 {
@@ -60,7 +60,7 @@
    }
 
    li {
-    font-size: 0.3rem;
+    font-size: 0.55rem;
   }
 
   .top {
@@ -76,5 +76,11 @@
     max-width: 400px;
     min-width: 250px;
   }
+
+  header .logo {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+}
   
 }
