@@ -1,10 +1,21 @@
 body {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
 }
 header {
     background: #1f2937;
     color: white;
-    padding:16px 200px;
+    padding:1rem 100px;
 }
 
 .top {
@@ -35,18 +46,17 @@ header .logo {
 }
 
 .bottom img {
-    max-width: 1000px;
-    min-width: 500px;
-    max-height: auto;
+    min-width: 400px;
+    width: 35vw;
+    justify-self: center;
 }
 
-.bottom .container {
+.bottom .body {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap-reverse;
-    overflow: hidden;
-    width: 500px;
-    flex-shrink: 0;
+    min-width: 400px;
+    width: 35vw;
 }
 
 button {
@@ -62,19 +72,24 @@ section {
     align-items: center;
 }
 
+.portrait {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
 .cards {
     display: flex;
-    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .cards img {
     width:200px;
     height: 200px;
+    border-radius: 10px;
+    border: solid black;
 }
 
-.portrait {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    width:300px
-}

@@ -1,0 +1,76 @@
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .cards img {
+    width:100px;
+    height: 100px;
+}
+
+.portrait {
+    border: solid red;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16ch;
+}
+
+.portrait p {
+  font-size: .8rem;
+  text-align: center;
+}
+}
+
+@media (max-width: 1020px) {
+  .bottom {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 0.5rem;
+   }
+  
+   h1 {
+    font-size: 1.5rem;
+   }
+
+   li {
+    font-size: 0.8rem;
+}
+
+  .bottom img {
+    max-width: 400px;
+    min-width: 250px;
+  }
+ 
+  .bottom .body {
+    max-width: 400px;
+    min-width: 250px;
+  }
+  
+}
