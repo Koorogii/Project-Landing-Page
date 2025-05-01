@@ -1,3 +1,15 @@
+@media (max-width: 1016px) {
+  .bottom {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 /* md */
 @media (max-width: 768px) {
   .container {
@@ -27,18 +39,6 @@
 }
 }
 
-@media (max-width: 1020px) {
-  .bottom {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-  h1 {
-    font-size: 2rem;
-  }
-}
-
 /* sm */
 @media (max-width: 640px) {
   .container {
@@ -56,7 +56,7 @@
    }
   
    h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
    }
 
    li {
@@ -68,13 +68,13 @@
   }
 
   .bottom img {
-    max-width: 400px;
-    min-width: 250px;
+    max-width: 475px;
+    min-width: 300px;
   }
  
   .bottom .body {
-    max-width: 400px;
-    min-width: 250px;
+    max-width: 475px;
+    min-width: 300px;
   }
 
   header .logo {
@@ -83,4 +83,11 @@
     border-radius: 10px;
 }
   
+.qoute p {
+  font-size: 1rem;
+}
+
+.qoute p:nth-child(2) {
+  font-size: .8rem;
+}
 }
