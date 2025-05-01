@@ -3,6 +3,7 @@ body {
 }
 
 
+
 p {
     font-size: 1rem;
     text-align: center;
@@ -12,6 +13,7 @@ h1 {
     font-size: 2.5rem;
     text-align: center;
     margin: 1rem 0;
+    padding:20px;
 }
 header {
     background: #1f2937;
@@ -103,34 +105,41 @@ section {
 
 .qoute {
     background-color: #E5E7EB;
+    padding: 1vw;
 }
 
 .qoute p {
     font-size: 2rem;
     font-style: "light italic";
-
+    width: 40ch;
+    justify-self: center;
 }
 
 .qoute p:nth-child(2) {
     font-size: 1rem;
     font-weight: bold;
     justify-self: flex-end;
-    margin: 1remx;
+    margin: 1rem;
 }
 
 .signup {
     border-radius: 10px;
-    margin: 0 20rem;
+    margin: 1rem 10rem;
     background-color: #3882f6;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
-    margin-bottom: 1rem;
+    gap: 25px;
 }
+
+.signup button {
+    border: solid white;
+    min-width: 100px
+}
+
 .cta {
     color: white;
-    width: 40ch;
+    
 }
 
 .cta p {

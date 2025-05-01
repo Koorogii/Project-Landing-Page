@@ -90,4 +90,8 @@
 .qoute p:nth-child(2) {
   font-size: .8rem;
 }
+
+footer {
+  font-size: .8rem;
+  }
 }
