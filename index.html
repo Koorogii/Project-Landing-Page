@@ -37,43 +37,86 @@
 
     <section class="utility">
         <h2>Below will tell the tales of those who have fallen. </h2>
-        <div class="cards">
-            <div class="portrait">
-                <p class="name">Ivellious</p>
-                <div class="stack">
-                    <img src="img/Ivellious.jpg" alt="dark elf archer wearing heavy armor">
-                    <p>"No one trusted him, and while napping in a tree, he was forgotten. Panicked, he chased after his crew—only to get wrecked by a jabberwock like the fool he was."</p>
-                </div>
-            </div>
-            <div class="portrait">
-                <p class="name">Haggin</p>
-                <div class="stack">
-                    <img src="img/Haggin.jpg" alt="a dragonborn covered in red armor">
-                    <p>"They say you miss every shot you don’t take—Haggin missed every shot he did take. The one time he finally landed a hit... it was the last thing he ever did."</p>
-                </div>
-            </div>
-            <div class="portrait">
-                <p class="name">Obsidian</p>
-                <div class="stack">
-                    <img src="img/Obsidian.jpg" alt="gnome who looks like something blew up in their face">
-                    <p>"Probably died in a ditch somewhere still pissed he didn't swing at Pockets."</p>
-                </div>
-            </div>
-            <div class="portrait">
-                <p class="name">Thorin</p>
-                <div class="stack">
-                    <img src="img/placeholder.png" alt="thorin">
-                    <p>"Tough as the anvil you would shape steel on... friend to many, nightmare to his enemies. The one none of us will forget."</p>
-                </div>
-            </div>
-            <div class="portrait">
-                <p class="name">Aeson</p>
-                <div class="stack">
-                    <img src="img/placeholder.png" alt="Aeson">
-                    <p>"Like many paladins, he looked stacked—though it may have just been the armor. Weaker than a skeleton’s rotted biceps, he died doing what he did best: healing the enemy."</p>
-                </div>
-            </div>
-        </div>
+        <select id="fallen">
+            <option value="">--Select A Fallen--</option>
+            <option value="Ivellious">Ivellious</option>
+            <option value="Haggin">Haggin</option>
+            <option value="Obsidian">Obsidian</option>
+            <option value="Thorin">Thorin</option>
+            <option value="Aeson">Aeson</option>
+        </select>
+        <div class="cards"></div>
+        <script>
+            const fallen = document.getElementById('fallen');
+            const cards = document.querySelector('.cards');
+
+            fallen.addEventListener('change',addCard);
+
+            function addCard () {
+                const choice = fallen.value;
+
+                switch (choice){
+
+                case 'Ivellious':
+                    cards.innerHTML =`
+                    <div class="portrait">
+                        <p class="name">Ivellious</p>
+                        <div class="stack">
+                            <img src="img/Ivellious.jpg" alt="dark elf archer wearing heavy armor">
+                            <p>"No one trusted him, and while napping in a tree, he was forgotten. Panicked, he chased after his crew—only to get wrecked by a jabberwock like the fool he was."</p>
+                        </div>
+                    </div>
+                    `;
+                break;
+                case 'Haggin':
+                    cards.innerHTML =`
+                    <div class="portrait">
+                        <p class="name">Haggin</p>
+                        <div class="stack">
+                            <img src="img/Haggin.jpg" alt="a dragonborn covered in red armor">
+                            <p>"They say you miss every shot you don’t take—Haggin missed every shot he did take. The one time he finally landed a hit... it was the last thing he ever did."</p>
+                        </div>
+                    </div>
+                    `;
+                break;
+                case 'Obsidian':
+                    cards.innerHTML =`
+                    <div class="portrait">
+                        <p class="name">Obsidian</p>
+                        <div class="stack">
+                            <img src="img/Obsidian.jpg" alt="gnome who looks like something blew up in their face">
+                            <p>"Probably died in a ditch somewhere still pissed he didn't swing at Pockets."</p>
+                        </div>
+                    </div>
+                    `;
+                break;
+                case 'Thorin':
+                    cards.innerHTML =`
+                    <div class="portrait">
+                        <p class="name">Thorin</p>
+                        <div class="stack">
+                            <img src="img/placeholder.png" alt="thorin">
+                            <p>"Tough as the anvil you would shape steel on... friend to many, nightmare to his enemies. The one none of us will forget."</p>
+                        </div>
+                    </div>
+                    `;
+                break;
+                case 'Aeson':
+                    cards.innerHTML =`
+                    <div class="portrait">
+                        <p class="name">Aeson</p>
+                        <div class="stack">
+                            <img src="img/placeholder.png" alt="Aeson">
+                            <p>"Like many paladins, he looked stacked—though it may have just been the armor. Weaker than a skeleton’s rotted biceps, he died doing what he did best: healing the enemy."</p>
+                        </div>
+                    </div>
+                    `;
+                break;
+                default:
+                    cards.innerHTML = ''
+                }
+            }
+        </script>
     </section>
 
     <div class="qoute utility">
